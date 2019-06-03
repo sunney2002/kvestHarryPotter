@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+	<div class="container start mt-5 mr-5">
+		<img src="door.png" class="w-25 door1">
+		<img src="narnia.png" class="w-25 door2">
+		<img src="door3.png" class="w-25 door3">
+	</div>
+
+	<div class="location1" style="background-image: url(bg.jpg);height: 800px; background-size: 100% 100%; display: none;">
+		<div class="text-white">
+    	   <h1>Помоги Гарри найти его метлу, плащ и палочку! Надо заработать 3 очка!</h1>
+    	   <h1 class="point1">0</h1>
+    	   <button type="button" class="btn btn-warning">Выйти из игры</button>
+        </div>
+			<img src="gun.png" class="item" style="margin-left: 100px; margin-top: 100px; width: 80px;position: absolute">
+			<img src="mantiya.png" class="mantiya" style="margin-left: 700px; margin-top: 100px; width: 50px;position: absolute">
+			<img src="metla.png" class="metla" style="margin-left: 1300px; margin-top: 500px; width: 50px;position: absolute">
+			<img src="palochka.png" class="palochka" style="margin-left: 1250px; margin-top: 150px; width: 50px;position: absolute">
+			<img src="ring.png" class="item" style="margin-left: 430px; margin-top: 700px; width: 30px; position: absolute">
+	</div>
+
+	<div class="location2" style="background-image: url(bg2.jpg);height: 1000px; background-size: 100% 100%; display: none;">
+		<div class="text-white">
+    	   <h1>Помоги Люси найти ! Надо заработать 3 очка!</h1>
+    	   <h1 class="point2">0</h1>
+    	   <button type="button" class="btn btn-primary">Выйти из игры</button>
+        </div>
+			<img src="gun.png" class="item" style="margin-left: 100px; margin-top: 100px; width: 80px;position: absolute">
+			<img src="sablya.png" class="sablya" style="margin-left: 700px; margin-top: 100px; width: 50px;position: absolute">
+			<img src="lion.png" class="lion" style="margin-left: 1300px; margin-top: 500px; width: 50px;position: absolute">
+			<img src="palochka.png" class="palochka" style="margin-left: 1250px; margin-top: 150px; width: 50px;position: absolute">
+			<img src="ring.png" class="item" style="margin-left: 430px; margin-top: 700px; width: 30px; position: absolute">
+	</div>
+
+<script type="text/javascript">
+	document.querySelector(".door1").onclick = function(){
+			let num1 = 0;
+		alert("Вы попали в Хогвартс!");
+		document.querySelector(".start").style.display = "none";
+		document.querySelector(".location1").style.display = "block";
+		document.querySelector(".palochka").onclick = function(){
+			document.querySelector(".palochka").style.display = "none";
+			num1 = num1 + 1;
+			document.querySelector(".point1").innerHTML = num1;
+        }	
+        document.querySelector(".metla").onclick = function(){
+			document.querySelector(".metla").style.display = "none";
+			num1 = num1 + 1;
+			document.querySelector(".point1").innerHTML = num1;
+
+        }
+        document.querySelector(".mantiya").onclick = function(){
+			document.querySelector(".mantiya").style.display = "none";
+			num1 = num1 + 1;
+			document.querySelector(".point1").innerHTML = num1;
+
+        }		
+	}
+	document.querySelector(".door2").onclick = function(){
+			let num2 = 0;
+		alert("Вы попали в Нарнию!");
+		document.querySelector(".start").style.display = "none";
+		document.querySelector(".location2").style.display = "block";
+		document.querySelector(".sablya").onclick = function(){
+			document.querySelector(".sablya").style.display = "none";
+			num2 = num2 + 1;
+			document.querySelector(".point2").innerHTML = num2;
+        }	
+        document.querySelector(".lion").onclick = function(){
+			document.querySelector(".lion").style.display = "none";
+			num2 = num2 + 1;
+			document.querySelector(".point2").innerHTML = num2;
+        }
+        document.querySelector(".").onclick = function(){
+			document.querySelector(".mantiya").style.display = "none";
+			num2 = num2 + 1;
+			document.querySelector(".point2").innerHTML = 2;
+        }		
+	}
+
+</script>
+</body>
+</html>
